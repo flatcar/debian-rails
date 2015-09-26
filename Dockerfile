@@ -8,7 +8,7 @@ RUN \
   apt-get update && \
   curl --silent --location https://deb.nodesource.com/setup_0.12 | bash - && \
   # install database dependencies
-  apt-get install -y mysql-client postgresql-client libsqlite3-dev nodejs --no-install-recommends && \
+  apt-get install -y nodejs --no-install-recommends && \
 
   # rails
   gem install rails --version "$RAILS_VERSION" && \
